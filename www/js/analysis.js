@@ -96,8 +96,9 @@ function complexity(filePath)
 					 		var x = node.body.body[i].expression.right.arguments[0].properties[0].key.loc.start.line;
 					 	//console.log(x);
 					 		console.log( "Line : {0} Function: {1} Parameters : {2} ".format(x,
-								functionName(node.body.body[i].expression.right.arguments[0].properties[0].key.name), node.body.body[i].expression.right.arguments[0].properties[0].value.params.length));
+								"read", node.body.body[i].expression.right.arguments[0].properties[0].value.params.length));
 					 		complexityBuilder.Functions++;
+					 		//console.log(node.body.body[i].expression.right.arguments[0].properties[0]);
 					 		}
 				 		}
 					 i++;
