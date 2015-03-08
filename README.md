@@ -19,16 +19,8 @@ Satvik Andi (sandi)
 
 ###Test
   (describe your testing setup)
-
-###Analysis
-  (section describing your base and extended analysis)
   
-
-
-
-# Vineeta ReadME
-
-Plugin used:
+  Plugins used:
 
 node_modules
 
@@ -67,6 +59,10 @@ www/js
 
 	d3js.js
 
+
+###Analysis
+  (section describing your base and extended analysis)
+  
 
 
   
