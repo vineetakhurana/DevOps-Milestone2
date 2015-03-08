@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="24"  lines-covered="20"  line-rate="0.8332999999999999"  branches-valid="12"  branches-covered="8"  branch-rate="0.6667000000000001"  timestamp="1425851650236" complexity="0" version="0.1">
+<coverage lines-valid="24"  lines-covered="20"  line-rate="0.8332999999999999"  branches-valid="12"  branches-covered="8"  branch-rate="0.6667000000000001"  timestamp="1425852408222" complexity="0" version="0.1">
 <sources>
 	<source>c:\Users\khurana\Desktop\devops\DevOps-MileStone2</source>
 </sources>
