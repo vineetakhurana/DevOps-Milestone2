@@ -36,7 +36,7 @@ Test-Runner : TestRunner.html
   ![Alt text] [img2]
   
   **Step 2 :**
-  We improve the specs to increase the code coverage of our tests and achieve complete coverage. For answers 1,2 & 3 , we gave all the 3 possible test scenarios ie., correct input, incorrect input and no input(not attempted). Also, we gave inputs like Integer and Float inputs instead of the expected 'True/False' values expected. We also gave wrong selections for answers for all the three questions. 
+  We improve the specs to increase the code coverage of our tests and achieve complete coverage. For answers 1,2 & 3 , we gave all the 3 possible test scenarios ie., correct input, incorrect input and no input(not attempted). Also, we gave inputs like Integer and Float inputs instead of the expected 'True/False' values expected. We also gave wrong selections for answers for all the three questions. Fuzz testing was performed by reversing the 'True/False' inputs to match against expected values.
   
   ![Alt text] [img3]
   
