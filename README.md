@@ -10,7 +10,9 @@ Satvik Andi (sandi)
 This project is a single page web-application. It has 3 questions, each of which has a True/False answer. Based on the selection made by the user, the output is displayed as correct / incorrect and if no selection is made, it displays "Not Yet Attempted". 
 
 Source file : site.js
+
 Test File : test-spec.js
+
 Test-Runner : TestRunner.html
 
 ###Test
@@ -19,7 +21,9 @@ Test-Runner : TestRunner.html
   In this step, we write specs to achieve basic coverage of the code functionality. We use '*Jasmine*' testing framework for javascript. We wrote specs that covered the following cases :
   
   A. For Question1, computed the response on feeding the correct value. (covers 'correct' case)
+  
   B. For Question2, didn't give any selection to compare the answer against. (covers 'Not yet attempted' case)
+  
   C. For Question3, computed the response on feeding the incorrect value. (covers 'incorrect' case)
   
   
