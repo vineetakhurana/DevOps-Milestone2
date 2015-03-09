@@ -49,12 +49,19 @@ Test-Runner : TestRunner.html
   
  **Step 5 :**
  
+  We use the 'Cobertura' plugin of Jenkins to publish the coverage report for every build.
+  
+  We have configured the cobertura plugin to fail unstable builds. This will be decided based on the thresholds we have set ie., 75% for methods, lines and conditionals.
+  
   ![Alt text] [img13] 
   
-  
+ The build failed as it did not meet the conditional stability threshold.  
   
   ![Alt text] [img14] 
   
+We can view the coverage report on Jenkins as follows :   
+  
+  ![Alt text] [img15]
   
 ###Analysis
 
@@ -105,5 +112,6 @@ Test-Runner : TestRunner.html
  [img11]: /Images/buildfail_jslint.PNG
  [img10]: /Images/warnings_threshold_config.PNG
  [img12]: /Images/coverage_buildfail_jenkins.PNG
- [img13]: /Images/coverage_buildfail_jenkins.PNG
- 
+ [img14]: /Images/console_output_coverage_fail.PNG
+ [img13]: /Images/buildfail_cobetura_config.PNG
+ [img15]: /Images/coverage_buildfail_jenkins.PNG
