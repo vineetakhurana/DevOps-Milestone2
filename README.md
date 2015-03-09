@@ -47,7 +47,13 @@ Test-Runner : TestRunner.html
   
   ![Alt text] [img4]
   
+ **Step 5 :**
+ 
+  ![Alt text] [img13] 
   
+  
+  
+  ![Alt text] [img14] 
   
   
 ###Analysis
@@ -62,7 +68,7 @@ Test-Runner : TestRunner.html
   
   ![Alt text] [img6]
   
- Jenkins, using the '*checkstyle*' plugin, gives the following report based on the xml file populated during the build :
+ Jenkins, using the '*Checkstyle*' plugin, gives the following report based on the xml file populated during the build :
 
   ![Alt text] [img7]
  
@@ -78,11 +84,11 @@ Test-Runner : TestRunner.html
   
  **Step 5 :**
 
- 
+  We have configured the Checkstyle plugin to fail a build if 'Priority high' warnings exceed 2 after running jslint on the code base. 
 
   ![Alt text] [img10]
 
- 
+ The build fails as there are 35 high priority warnings detected.
  
   ![Alt text] [img11]
   
@@ -98,4 +104,6 @@ Test-Runner : TestRunner.html
  [img9]: ./Images/step4_analysis.PNG
  [img11]: /Images/buildfail_jslint.PNG
  [img10]: /Images/warnings_threshold_config.PNG
-  
+ [img12]: /Images/coverage_buildfail_jenkins.PNG
+ [img13]: /Images/coverage_buildfail_jenkins.PNG
+ 
