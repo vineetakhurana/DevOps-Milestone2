@@ -18,7 +18,7 @@ Test-Runner : TestRunner.html
 ###Test
   
   **Step 1 :**
-  In this step, we write specs to achieve basic coverage of the code functionality. We use '*Jasmine*' testing framework for javascript. We wrote specs that covered the following cases :
+  In this step, we write specs to achieve basic coverage of the code functionality. We use '*Jasmine*' testing framework for javascript. '*PhantomJS*' is used as the test runner and the results of the test are visible on TestRunner.html. We wrote specs that covered the following cases :
   
   A. For Question1, computed the response on feeding the correct value. (covers 'correct' case)
   
@@ -27,11 +27,11 @@ Test-Runner : TestRunner.html
   C. For Question3, computed the response on feeding the incorrect value. (covers 'incorrect' case)
   
   
-  The following is the output that Jasmine gives on running the specs we have written :
+  We run jasmine specs headlessly through PhantomJS. We run the tests by executing the grunt task '*jasmine:all*', configured to use '*grunt-contrib-jasmine*'. The results are viewed via TestRunner.html :
   
   ![Alt text] [img1]
   
-  Jasmine also generates code coverage reports such as below :
+ The following is the output that executing grunt task '*jasmine:istanbul*', configured to use '*grunt-template-jasmine-istanbul*', gives on running the specs we have written :
   
   ![Alt text] [img2]
   
