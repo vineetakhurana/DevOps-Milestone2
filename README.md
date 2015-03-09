@@ -16,6 +16,9 @@ Satvik Andi (sandi)
                           
 ####Project Code Base in : Javascript
 
+Source file : site.js
+Test File : test-spec.js
+Test-Runner : TestRunner.html
 
 ###Test
   
@@ -55,6 +58,9 @@ Satvik Andi (sandi)
   
   ![Alt text] [img8]
 
+ The analysis.js file computes the number of functions and the cyclomatic complexity for the source file ie., site.js
+
+  ![Alt text] [img9]
   
 
  [img1]: ./Images/jasmine_output_1.PNG 
@@ -65,5 +71,5 @@ Satvik Andi (sandi)
  [img6]: ./Images/jslint_config.PNG
  [img7]: ./Images/jslint_checkstyle_output.PNG
  [img8]: ./Images/jslint_checkstyle_output_details.PNG
- 
+ [img9]: ./Images/step4_analysis.PNG
   
