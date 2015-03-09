@@ -16,6 +16,8 @@ Satvik Andi (sandi)
                           
 ####Project Code Base in : Javascript
 
+This project is a single page web-application. It has 3 questions, each of which has a True/False answer. Based on the selection made by the user, the output is displayed as correct / incorrect and if no selection is made, it displays "Not Yet Attempted". 
+
 Source file : site.js
 Test File : test-spec.js
 Test-Runner : TestRunner.html
@@ -23,7 +25,14 @@ Test-Runner : TestRunner.html
 ###Test
   
   **Step 1 :**
-  In this step, we write specs to achieve basic coverage of the code functionality. We use '*Jasmine*' testing framework for javascript. The following is the output that Jasmine gives on running the specs we have written :
+  In this step, we write specs to achieve basic coverage of the code functionality. We use '*Jasmine*' testing framework for javascript. We wrote specs that covered the following cases :
+  
+  A. For Question1, computed the response on feeding the correct value. (covers 'correct' case)
+  B. For Question2, didn't give any selection to compare the answer against. (covers 'Not yet attempted' case)
+  C. For Question3, computed the response on feeding the incorrect value. (covers 'incorrect' case)
+  
+  
+  The following is the output that Jasmine gives on running the specs we have written :
   
   ![Alt text] [img1]
   
@@ -32,7 +41,7 @@ Test-Runner : TestRunner.html
   ![Alt text] [img2]
   
   **Step 2 :**
-  We improve the specs to increase the code coverage of our tests and achieve complete coverage.
+  We improve the specs to increase the code coverage of our tests and achieve complete coverage. For answers 1,2 & 3 , we gave all the 3 possible test scenarios ie., correct input, incorrect input and no input(not attempted). Also, we gave inputs like Integer and Float inputs instead of the expected 'True/False' values expected. We also gave wrong selections for answers for all the three questions. 
   
   ![Alt text] [img3]
   
@@ -40,8 +49,8 @@ Test-Runner : TestRunner.html
   
   
   
-  
 ###Analysis
+
   We use the '*JsLint*' tool to perform static analysis of our javascript code. The tool analyses the code on every build :
   
   ![Alt text] [img5]
