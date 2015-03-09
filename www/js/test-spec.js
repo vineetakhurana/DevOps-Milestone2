@@ -46,18 +46,26 @@ it("gives wrong input - for correct ans", function() {
 
     it("gives wrong input - integer", function() {
     var target = new SiteSettingsViewModel();
-    target.q3(8879);
+    target.Pref(8879);
     //ko.utils.unwrapObservable(self.Pref)
     expect(target.Pref1()).toBe("Correct!!");
   });
 
     it("gives wrong input - float", function() {
     var target = new SiteSettingsViewModel();
-    target.q3(12.69);
+    target.Pref(12.69);
     //ko.utils.unwrapObservable(self.Pref)
     expect(target.Pref1()).toBe("Incorrect!!");
   });
 
+    //fuzzing
+  it("computes output for randomized input", function() {
+  var input = "true";
+  var input_reverse = input.split("").reverse().join(""); //reversing a string in JS
+  var target = new SiteSettingsViewModel();
+  target.Pref(input_reverse);
+  expect(target.Pref1()).toBe("Correct!!");
+  });
 
 });
 
@@ -108,10 +116,19 @@ describe("Answer 2", function() {
 
     it("gives wrong input - float", function() {
     var target = new SiteSettingsViewModel();
-    target.q3(12.69);
+    target.q2(12.69);
     //ko.utils.unwrapObservable(self.Pref)
     expect(target.answer3()).toBe("Incorrect!!");
   });   
+
+      //fuzzing
+  it("computes output for randomized input", function() {
+  var input = "true";
+  var input_reverse = input.split("").reverse().join(""); //reversing a string in JS
+  var target = new SiteSettingsViewModel();
+  target.q2(input_reverse);
+  expect(target.answer2()).toBe("Correct!!");
+  });
 
 
 });
@@ -165,6 +182,17 @@ describe("Answer 3", function() {
     //ko.utils.unwrapObservable(self.Pref)
     expect(target.answer3()).toBe("Incorrect!!");
   });
+
+  
+      //fuzzing
+  it("computes output for randomized input", function() {
+  var input = "false";
+  var input_reverse = input.split("").reverse().join(""); //reversing a string in JS
+  var target = new SiteSettingsViewModel();
+  target.q3(input_reverse);
+  expect(target.answer3()).toBe("InCorrect!!");
+  });
+
 
 
 // describe("tester", function() {
