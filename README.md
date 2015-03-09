@@ -97,7 +97,7 @@ We can view the coverage report on Jenkins as follows :
 
  [img1]: ./Images/jasmine_output_1.PNG 
  [img2]: ./Images/coverage_report_step1.PNG
- [img3]: ./Images/jasmine_output_2.PNG
+ [img3]: ./Images/fuzzing.PNG
  [img4]: ./Images/coverage_report_step2.PNG
  [img5]: ./Images/jslint_console_output.PNG
  [img6]: ./Images/jslint_config.PNG
