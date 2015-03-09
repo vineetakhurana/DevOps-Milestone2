@@ -62,6 +62,8 @@ Test-Runner : TestRunner.html
 
   ![Alt text] [img9]
   
+ 
+  
 
  [img1]: ./Images/jasmine_output_1.PNG 
  [img2]: ./Images/coverage_report_step1.PNG
