@@ -49,29 +49,42 @@ Test-Runner : TestRunner.html
   
   
   
+  
 ###Analysis
 
-  We use the '*JsLint*' tool to perform static analysis of our javascript code. The tool analyses the code on every build :
+  **Step 3 :**                          
+
+  We use the Jenkins plugin '*JsLint*' to perform static analysis of our javascript code. The tool analyses the code on every build :
   
   ![Alt text] [img5]
   
- In Jenkins, we configure the files that JsLint has to run analysis on and the xml to which the output needs to be parsed.  
+ In Jenkins, we configure the files that JsLint has to run analysis on and  set the 'xml' to which the output needs to be parsed.  
   
   ![Alt text] [img6]
   
- Jenkins, using the 'checkstyle' plugin, thus gives the following output on build :
+ Jenkins, using the '*checkstyle*' plugin, gives the following report based on the xml file populated during the build :
 
   ![Alt text] [img7]
  
- We can also look at the details of the output in the 'Details' tab. A sample is as follows ...
+ We can also look at the details of the output in the '*Details*' tab. A sample is as follows ..
   
   ![Alt text] [img8]
+
+ **Step 4 :**
 
  The analysis.js file computes the number of functions and the cyclomatic complexity for the source file ie., site.js
 
   ![Alt text] [img9]
   
+ **Step 5 :**
+
  
+
+  ![Alt text] [img10]
+
+ 
+ 
+  ![Alt text] [img11]
   
 
  [img1]: ./Images/jasmine_output_1.PNG 
@@ -83,4 +96,6 @@ Test-Runner : TestRunner.html
  [img7]: ./Images/jslint_checkstyle_output.PNG
  [img8]: ./Images/jslint_checkstyle_output_details.PNG
  [img9]: ./Images/step4_analysis.PNG
+ [img11]: /Images/buildfail_jslint.PNG
+ [img10]: /Images/warnings_threshold_config.PNG
   
